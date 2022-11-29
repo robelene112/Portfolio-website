@@ -1,0 +1,14 @@
+Style
+	header/nav:	
+	- Double header (like frenchie shop)
+	- Logo is full name
+
+	- Links to social media
+	- Icon in tab
+
+Content
+
+	nav:
+	- Home: introduction
+	- Blogs: tech blogs
+	- Contact: contact information
