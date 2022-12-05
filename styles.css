@@ -1,3 +1,5 @@
+/* ---Setup--- */
+
 html {
     font-size: 100%;
     box-sizing: border-box;
@@ -16,6 +18,39 @@ body {
     height: 100%;
 }
 
+/* ---Animations--- */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ---Double header--- */
+
 #double-header {
     background: linear-gradient(to right, #5220e4, #8b21e5); /** #5220e4 & 8b21e5 **/
     height: 3.2rem;
@@ -27,9 +62,12 @@ body {
 #double-header-content {
     color: white;
     font-family: 'Sen', sans-serif;
+    font-weight: 300;
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
 }
+
+/* ---Main header--- */
 
 header {
     display: flex;
@@ -42,8 +80,16 @@ header {
 #logo {
     color: white;
     font-family: 'Roboto Mono', monospace;
+    text-decoration: underline;
     padding-left: 1rem;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
+
+/* ---Navigation--- */
 
 #nav-list {
     width: 25%;
@@ -53,8 +99,6 @@ header {
     /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr)
-    /* height: 100%; */
-    /* width: 100%; */
 }
 
 .nav-element {
@@ -65,7 +109,7 @@ header {
     font-family: 'Sen', sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: #bbbbbe;
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -80,24 +124,56 @@ header {
 
 #selected {
     background-color: #5121e5;
+    color: white;
 }
 
+/* ---Intro part--- */
+
 #intro-div {
-    /* display: grid; */
-    /* grid-template-columns: repeat(100, 1fr); */
-    /* grid-template-rows: repeat(30, 1fr); */
-    height: 30rem;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     /* border: 1px solid green; */
+    overflow: hidden;
 }
 
 #my-pic {
-    width: 30rem;
+    /* width: 30rem; */
     filter: brightness(40%);
-    /* grid-area: 1 / 1 / 30 / 30; */
-    /* overflow: clip; */
 }
 
-h1 {
-    /* display: inline; */
+#my-pic > img {
+    width: 41rem;
+    height: 32rem;
+    
+}
+
+#intro-text {
+    position: absolute;
+    font-family: 'Sen', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    z-index: 1;
+    padding-top: 1rem;
+    /* padding-left: 37.5rem; */
+    left: 37.5rem;
+    /* padding-bottom: 10rem; */
+    /* border: 1px solid red; */
+    margin: 0;
+
+}
+
+#intro-text > h1 {
+    /* line-height: 10rem; */
+    /* padding: 0 */
+    margin: 0;
+}
+
+#intro-text > p {
+    font-weight: 400;
+    font-size: 1.1rem;
+
+} 
+
+#intro-text-engineer {
+    color: grey;
 }
