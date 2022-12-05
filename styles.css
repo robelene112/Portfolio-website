@@ -4,6 +4,7 @@ html {
     font-size: 100%;
     box-sizing: border-box;
     height: 100%;
+    font-family: 'Sen', sans-serif;
 }
 
 *, *::before, *::after {
@@ -20,84 +21,26 @@ body {
 
 /* ---Animations--- */
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes slide-in-right {
-    from { transform: translateX(-100%);}
-    to { transform: translateX(0%);}
-}
-
-@keyframes slide-in-left {
-    from { transform: translateX(100%);}
-    to { transform: translateX(0%);}
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-moz-keyframes slide-in-right {
-    from { transform: translateX(-100%);}
-    to { transform: translateX(0%);}
-}
-
-@-moz-keyframes slide-in-left {
-    from { transform: translateX(100%);}
-    to { transform: translateX(0%);}
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-webkit-keyframes slide-in-right {
-    from { transform: translateX(-100%);}
-    to { transform: translateX(0%);}
-}
-
-@-webkit-keyframes slide-in-left {
-    from { transform: translateX(100%);}
-    to { transform: translateX(0%);}
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-ms-keyframes slide-in-right {
-    from { transform: translateX(-100%);}
-    to { transform: translateX(0%);}
-}
-
-@-ms-keyframes slide-in-left {
-    from { transform: translateX(100%);}
-    to { transform: translateX(0%);}
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-o-keyframes slide-in-right {
-    from { transform: translateX(-100%);}
-    to { transform: translateX(0%);}
-}
-
-@-o-keyframes slide-in-left {
-    from { transform: translateX(100%);}
-    to { transform: translateX(0%);}
-}
+@supports (animation: fadein 1s) {
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  }
+  
+  @supports (animation: slide-in-right 1s) {
+    @keyframes slide-in-right {
+      from { transform: translateX(-100%);}
+      to { transform: translateX(0%);}
+    }
+  }
+  
+  @supports (animation: slide-in-left 1s) {
+    @keyframes slide-in-left {
+      from { transform: translateX(100%);}
+      to { transform: translateX(0%);}
+    }
+  }
 
 /* ---Double header--- */
 
@@ -112,7 +55,6 @@ body {
 
 #double-header-content {
     color: white;
-    font-family: 'Sen', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
@@ -162,7 +104,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Sen', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     color: #bbbbbe;
@@ -206,7 +147,6 @@ header {
 
 #intro-text {
     position: absolute;
-    font-family: 'Sen', sans-serif;
     color: white;
     font-weight: 700;
     font-size: 2.5rem;
@@ -248,7 +188,6 @@ header {
 
 #qualifications-paragraph {
     color: #8491a0;
-    font-family: 'Sen', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     position: relative;
@@ -258,7 +197,6 @@ header {
 
 #qualifications-tab-div > h2 {
     color: white;
-    font-family: 'Sen', sans-serif;
     font-size: 3.4rem;
     margin: 0;
     position: relative;
@@ -290,7 +228,6 @@ header {
 .qualifications-count {
     margin: 0;
     font-size: 7.3rem;
-    font-family: 'Sen', sans-serif;
     color: #8491a0;
     font-weight: 400;
     /* border: 1px solid red; */
@@ -298,7 +235,6 @@ header {
 }
 
 .qualifications-block > h4 {
-    font-family: 'Sen', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     color: white;
