@@ -131,7 +131,7 @@ header {
 
 #my-pic {
     /* width: 30rem; */
-    filter: brightness(40%);
+    filter: brightness(30%);
     -webkit-animation: slide-in-right 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: slide-in-right 1s; /* Firefox < 16 */
      -ms-animation: slide-in-right 1s; /* Internet Explorer */
@@ -188,6 +188,7 @@ header {
 
 #qualifications-paragraph {
     color: #8491a0;
+    width: 70%;
     font-size: 1rem;
     font-weight: 700;
     position: relative;
@@ -199,6 +200,7 @@ header {
     color: white;
     font-size: 3.4rem;
     margin: 0;
+    width: 85%;
     position: relative;
     top: 16rem;
     left: 4rem;

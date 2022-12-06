@@ -1,13 +1,9 @@
-const navbarElements = document.getElementsByClassName("nav-element");
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-function changeId(element) {
-  document.getElementById("selected").id = null;
-  element.target.id = "selected";
-  console.log(element.target);
-}
-
-for (i = 0; i < navbarElements.length; i++) {
-  navbarElements[i].addEventListener("click", changeId);
-}
-
-// document.getElementById("selected");
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
