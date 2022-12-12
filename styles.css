@@ -181,10 +181,9 @@ header {
 
 /* ---Qualifications--- */
 
-.lazy-load {
+.qualifications-tab-div {
     height: 50rem;
     background-color: #000000;
-    /* display: hidden; */
 }
 
 #qualifications-paragraph {
@@ -194,10 +193,12 @@ header {
     font-weight: 700;
     position: relative;
     top: 16rem;
-    left: 4rem
+    left: 4rem;
+    /* border: 1px solid red; */
+
 }
 
-#qualifications-tab-div > h2 {
+.qualifications-tab-div > h2 {
     color: white;
     font-size: 3.4rem;
     margin: 0;
@@ -254,6 +255,49 @@ header {
     color: #890023;
 }
 
-.lazy-load.show {
-    display: block; 
+.qualifications-block > p {
+    color: white;
+}
+
+.qualifications-block > a {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.15rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: relative;
+    top: 2rem;
+    /* border: 1px solid red; */
+}
+
+.qualifications-block > a::after {
+    content: '↠';
+    /* content: '»'; */
+    /* position: absolute; */
+    padding-left: 0.5rem
+}
+
+/* ---Skillset--- */
+
+.skillset-tab-div {
+    height: 37.5rem;
+    background-color: #fff3e4;
+}
+
+.skillset-tab-div > img {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 50%;
+}
+
+#skillset-paragraph {
+    color: #8491a0;
+    width: 70%;
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    top: 16rem;
+    left: 4rem;
+    /* border: 1px solid red; */
 }
