@@ -15,7 +15,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(110deg, #000000 60%, #181824 40%);
+    background: linear-gradient(110deg, #000000 40%, #181824 40%);
     /* height: 100%; */
 }
 
@@ -67,7 +67,6 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 5.5rem;
-    /* border: 1px solid red; */
 }
 
 #logo {
@@ -85,13 +84,12 @@ header {
 /* ---Navigation--- */
 
 #nav-list {
-    width: 50%;
+    width: 40%;
     height: 100%;
     margin-right: 4.5rem;
     list-style: none;
-    /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
      -ms-animation: fadein 1s; /* Internet Explorer */
@@ -125,13 +123,16 @@ header {
 
 #intro-div {
     margin-top: 2.5rem;
+    height: 100%;
     /* border: 1px solid green; */
-    overflow: hidden;
 }
 
 #my-pic {
-    /* width: 30rem; */
-    filter: brightness(30%);
+    width: 40rem;
+    filter: brightness(80%);
+    position: relative;
+    top: 0.4rem;
+    left: 6rem;
     -webkit-animation: slide-in-right 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: slide-in-right 1s; /* Firefox < 16 */
      -ms-animation: slide-in-right 1s; /* Internet Explorer */
@@ -140,8 +141,10 @@ header {
 }
 
 #my-pic > img {
-    width: 41rem;
-    height: 32rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    /* margin-bottom: 5rem; */
     
 }
 
@@ -154,7 +157,6 @@ header {
     padding-top: 1rem;
     left: 37.5rem;
     /* padding-bottom: 10rem; */
-    /* border: 1px solid red; */
     -webkit-animation: slide-in-left 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: slide-in-left 1s; /* Firefox < 16 */
      -ms-animation: slide-in-left 1s; /* Internet Explorer */
@@ -182,7 +184,9 @@ header {
 /* ---Qualifications--- */
 
 .qualifications-tab-div {
-    height: 50rem;
+    position: relative;
+    /* bottom: 5rem; */
+    height: 55rem;
     background-color: #000000;
 }
 
@@ -194,7 +198,6 @@ header {
     position: relative;
     top: 7rem;
     left: 4rem;
-    /* border: 1px solid red; */
 
 }
 
@@ -206,7 +209,6 @@ header {
     position: relative;
     top: 10rem;
     left: 4rem;
-    /* border: 1px solid red; */
 
 }
 
@@ -219,14 +221,12 @@ header {
     /* justify-content: space-between; */
     /* align-items:  start; */
     /* background-color: #02f1c9; */
-    /* border: 1px solid red; */
     
 }
 
 .qualifications-block {
     padding-right: 1rem;
     /* animation: slide-in-right 1s; */
-    /* border: 1px solid red; */
 
 }
 
@@ -235,7 +235,6 @@ header {
     font-size: 7.3rem;
     color: #8491a0;
     font-weight: 400;
-    /* border: 1px solid red; */
 
 }
 
@@ -245,7 +244,6 @@ header {
     color: white;
     margin: 0   ;
     /* line-height: 0; */
-    /* border: 1px solid red; */
 }
 
 #issuer-1 {
@@ -268,14 +266,13 @@ header {
     font-size: 1.5rem;
     position: relative;
     top: 2rem;
-    /* border: 1px solid red; */
 }
 
 
 /* ---Skillset--- */
 
 .skillset-tab-div {
-    height: 37.5rem;
+    height: 50rem;
     background-color: #fff3e4;
     display: flex;
     justify-content: space-around;
@@ -284,15 +281,17 @@ header {
 .skillset-image-container {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .skillset-image-container > img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 60%
 }
 
-.skillset-text-container {
+.skillset-skill-container {
     /* display: inline; */
     width: 100%;
     height: 100%;
@@ -306,5 +305,30 @@ header {
     position: relative;
     top: 2rem;
     left: 4rem;
-    /* border: 1px solid red; */
+}
+
+#skillset-header {
+    position: relative;
+    width: 90%;
+    top: 2rem;
+    left: 4rem;
+    color: #181823;
+    font-size: 3.4rem;
+    /* display: inline-block; */
+}
+
+#logo-container {
+    height: 60%;
+    width: 95%;
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+}
+
+#logo-container > img {
+    width: 18%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin: 0.5rem;
+    /* mix-blend-mode: color-burn; */
 }
