@@ -1,0 +1,6 @@
+Chores
+- fix links to certificates
+- footer
+- blogs
+- connect contact tab to email
+- implement lazy loading;
