@@ -16,22 +16,30 @@
 </head>
 
 <body>
+
     <!-- Double header -->
+
     <section id="double-header">
-        <h2 id="double-header-content">Contact me now!</h2>
+        <a href="#contact-paragraph">
+            <h2 id="double-header-content">Contact me now!</h2>
+        </a>
     </section>
+
     <!-- Main header -->
+
     <header>
         <h2 id="logo">DAVID ENGELEN</h2>
         <nav id="nav-list">
-            <a href="#" class="nav-element">Home</a>
+            <a href="#double-header" class="nav-element">Home</a>
             <a href="#qualifications-paragraph" class="nav-element">Qualifications</a>
             <a href="#skillset-paragraph" class="nav-element">Skillset</a>
             <!-- <a href="#" class="nav-element">Blogs</a> -->
-            <a href="#" class="nav-element">Contact</a>
+            <a href="#contact-paragraph" class="nav-element">Contact</a>
         </nav>
     </header>
+
     <!-- Intro -->
+
     <div id="intro-div">
         <div id="intro-text">
             <h1>Hi there! <br> I'm David. <br> Your new full stack <span id="intro-text-engineer">engineer.</span></h1>
@@ -41,7 +49,9 @@
         </div>
         <div id="my-pic"><img src="./assets/IMG_20210219_192450-Transparent.png" alt="Photo of me"></div>
     </div>
+
     <!-- Qualifications -->
+
     <div class="qualifications-tab-div">
         <p id="qualifications-paragraph">QUALIFICATIONS</p>
         <h2>Qualifications i've worked to achieve <br>and who issued them.</h2>
@@ -73,7 +83,9 @@
 
         </div>
     </div>
+
     <!-- Skillset -->
+
     <div class="skillset-tab-div">
         <div class="skillset-skill-container">
             <p id="skillset-paragraph">SKILLSET</p>
@@ -92,11 +104,33 @@
                 <img src="./assets/logo's/python.png" alt="python-logo">
                 <img src="./assets/logo's/bash.png" alt="bash-logo">
                 <img src="./assets/logo's/markdown.png" alt="markdown-logo">
-
             </div>
         </div>
         <div class="skillset-image-container">
             <img src="./assets/Engineer-transparant.png" alt="">
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div class="contact-tab-div">
+        <p id="contact-paragraph">CONTACT</p>
+        <h2>Let's talk business</h2>
+        <p>Now that you know a lot about me, let me know if you are <br>interested to work with me.</p>
+        <div class="form-div">
+            <form action="" method="post">
+                <label for="name">Name</label>
+                <br>
+                <input required maxlength="255" type="text" id="name" class="input-box">
+                <label for="email">Email Address</label>
+                <br>
+                <input required maxlength="255" type="text" id="email" class="input-box">
+                <label for="message">Message</label>
+                <br>
+                <textarea required maxlength="5000" id="message" class="input-box"></textarea>
+                <input id="submit-button" type="submit" value="LET'S GET STARTED">
+
+            </form>
         </div>
     </div>
 </body>
