@@ -4,3 +4,7 @@ Chores
 - blogs
 - connect contact tab to email
 - implement lazy loading;
+- change profile pic
+- change engineer logo
+- add text to certificates
+- add links to logos
